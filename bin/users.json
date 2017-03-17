@@ -1,0 +1,23 @@
+{
+	"users":[
+		{
+          "username": "admin",
+          "email" : "admin@gmail.com",
+          "password" : "test",
+          "emailVerified": true
+		},
+		{
+          "username": "manager",
+          "email" : "manager@gmail.com",
+          "password" : "test",
+          "realm" : "Manager",
+          "emailVerified": true
+		},
+		{
+          "username": "client",
+          "email" : "client@gmail.com",
+          "password" : "test",
+          "emailVerified": true
+		}
+	]
+}

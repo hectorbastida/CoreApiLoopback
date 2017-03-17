@@ -1,0 +1,56 @@
+{
+  "name": "user",
+  "base": "User",
+  "strict": true,
+  "idInjection": true,
+  "scope":{
+    "include":[
+      "userProfile",
+      "client",
+      "manager"
+    ]
+  },
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "Timestamp": true,
+    "CreateRelationedModels":{
+      "models":[
+        {"name":"UserProfile","addModelId":true},
+        {"name":"Client","addModelId":true},
+        {"name":"Manager","addModelId":true}
+      ]
+    }
+  },
+  "settings": {
+    "mongodb": {
+      "allowExtendedOperators": true
+    }
+  },
+  "properties": {
+    "modified": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "userProfile": {
+      "type": "hasOne",
+      "model": "UserProfile",
+      "foreignKey": ""
+    },
+    "client": {
+      "type": "hasOne",
+      "model": "Client",
+      "foreignKey": ""
+    },
+    "manager": {
+      "type": "hasOne",
+      "model": "Manager",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

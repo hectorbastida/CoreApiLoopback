@@ -1,0 +1,20 @@
+{
+	"roles":[
+		{
+		  "id":"1",
+		  "name": "Admin",
+		  "description": "Admin user with most permissions"
+		},
+		{
+		  "id":"2",
+		  "name": "Manager",
+		  "description": "Manager user with some permissions"
+		},
+		{
+		  "id":"3",
+		  "name": "Client",
+		  "description": "Client user with some permissions"
+		}
+	]
+
+}

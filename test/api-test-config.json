@@ -1,0 +1,17 @@
+[
+  {
+    "method": "GET",
+    "model": "users",
+    "expect": 401
+  },
+  {
+    "method": "GET",
+    "model": "Clients",
+    "expect": 200
+  },
+  {
+    "method": "GET",
+    "model": "Managers",
+    "expect": 200
+  }
+]

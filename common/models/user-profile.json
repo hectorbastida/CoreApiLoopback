@@ -1,0 +1,37 @@
+{
+  "name": "UserProfile",
+  "base": "persistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "settings": {
+    "mongodb": {
+      "allowExtendedOperators": true
+    }
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "lastname": {
+      "type": "string",
+      "required": true
+    },
+    "birthDate": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "user": {
+      "type": "belongsTo",
+      "model": "user",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
